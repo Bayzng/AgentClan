@@ -4,6 +4,8 @@ import { cn } from "@/lib/utils";
 import ThemeToggle from "./ui/ThemeToggle";
 import { useTheme } from "@/contexts/ThemeContext";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { MdEmojiEvents } from "react-icons/md";
+
 import {
   Compass,
   Sparkles,
@@ -181,14 +183,16 @@ const Navbar = () => {
 
           <div className="hidden lg:flex items-center space-x-3">
             <ThemeToggle className="rounded-full hover:bg-green-600/20 hover:border-[1px] border-green-600" />
+            <a href="https://lu.ma/calendar/manage/cal-ds5meFaMYTFohrt">
             <Button
               variant="outline"
               size="sm"
               className="rounded-full px-5 group overflow-hidden border-green-600"
             >
-              <LogIn className="mr-1 h-4 w-4 transition-transform group-hover:translate-x-1 " />
-              <span className="relative">Login</span>
+              <MdEmojiEvents className="mr-1 h-4 w-4 transition-transform group-hover:translate-x-1 " />
+              <span className="relative">Event</span>
             </Button>
+            </a>
             <Button className="rounded-full px-5 bg-green-600 hover:animate-glow border-0 shadow-md relative overflow-hidden group">
               <span className="relative z-10 flex items-center">
                 Get Started
@@ -258,14 +262,16 @@ const Navbar = () => {
               Call Now
             </MobileNavLink>
             <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              <a href="https://lu.ma/calendar/manage/cal-ds5meFaMYTFohrt">
               <Button
                 variant="outline"
                 size="sm"
                 className="w-full rounded-full"
               >
                 <LogIn className="mr-2 h-4 w-4" />
-                <span className="relative z-10">Login</span>
+                <span className="relative z-10">Event</span>
               </Button>
+              </a>
               <Button className="w-full rounded-full bg-gradient-to-r from-brand-500 to-brand-400 border-0 relative">
                 <span className="relative z-10 flex items-center">
                   Get Started

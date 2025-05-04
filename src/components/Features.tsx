@@ -35,7 +35,7 @@ const Features = () => {
 
           <RevealAnimation delay={0.1}>
             <h3 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-4">
-              Everything you need to supercharge your workflow
+              Everything you need to supercharge your web2 & web3 businesses
             </h3>
           </RevealAnimation>
 
